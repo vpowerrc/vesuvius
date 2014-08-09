@@ -145,6 +145,7 @@ function shn_mainmenuitem($action, $desc, $module = null) {
 function shn_mainmenuopen($desc) {
 	echo "
 		<div id=\"menuwrap\">
+		<nav class=\"nav-collapse\">
 		<ul id=\"menu\">
 	";
 }
@@ -154,7 +155,9 @@ function shn_mainmenuopen($desc) {
 /** shn_mainmenuclose */
 function shn_mainmenuclose() {
 	echo "
+	    <div class=\"clear_li\"></div>
 		</ul>
+		</nav>
 		</div> <!-- /menuwrap -->
 	";
 }
