@@ -39,9 +39,8 @@ header('Content-type: text/html; charset=UTF-8')
 <meta name="Licence Website" content="http://www.gnu.org/licenses/lgpl-2.1.txt" />
 <meta name="google-site-verification" content="Y2Ts00HnBQEr3M3KegrKRRAMVuQPejmqeqPKDsMGRGw" />
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/fbnpmpdcnjkhfcgeeklebjmopaheplce">
-<link rel="stylesheet" media="screen, projection" type="text/css" href="theme/<?php echo $global['theme'];?>/sahana.css" />
-<link rel="stylesheet" media="print" type="text/css" href="theme/<?php echo $global['theme'];?>/print.css" />
-<link rel="stylesheet" media="handheld" type="text/css" href="theme/<?php echo $global['theme'];?>/mobile.css" />
+<link rel="stylesheet" type="text/css" href="theme/<?php echo $global['theme'];?>/sahana.css" />
+
 <?
 //--- Provide Stylesheets to hack different versions of IEs' css ---//
 
@@ -94,6 +93,8 @@ if (file_exists($global['approot']."www/theme/".$global['theme']."/ie9.css")) { 
 <script type="text/javascript" src="res/js/jquery.js"></script>
 <script type="text/javascript" src="res/js/highcharts.js"></script>
 <script type="text/javascript" src="res/js/exporting.js"></script>
+<link rel="stylesheet" type="text/css" href="theme/<?php echo $global['theme'];?>/responsive-nav.css">
+<script type="text/javascript" src="theme/<?php echo $global['theme'];?>/responsive-nav.min.js"></script>
 
 <?php
 }
